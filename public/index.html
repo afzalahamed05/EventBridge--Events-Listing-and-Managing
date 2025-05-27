@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EventSphere - Premier Event Platform</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button id="heading"><h1>EventSphere</h1></button>
+            <nav id="nav-bar">
+                <!-- Navigation links will be added dynamically -->
+            </nav>
+        </header>
+    
+        <main>
+            <section class="hero">
+                <h2>Discover Premier Events</h2>
+                <p>Experience a world of curated events designed to inspire, connect, and celebrate.</p>
+            </section>
+    
+            <div class="college-selector">
+                <button class="college-icon active" data-college="all">
+                    <img src="./assets/logo/all.png" alt="All Colleges Logo">
+                    <span>All Colleges</span>
+                </button>
+                <button class="college-icon" data-college="VIT">
+                    <img src="./assets/logo/vit.png" alt="VIT Logo">  
+                    <span>VIT</span>
+                </button>
+                <button class="college-icon" data-college="SRM">
+                    <img src="./assets/logo/SRM.png" alt="SRM Logo">
+                    <span>SRM</span>
+                </button>
+                <button class="college-icon" data-college="NIT">
+                    <img src="./assets/logo/NIT.png" alt="NIT Logo">
+                    <span>NIT</span>
+                </button>
+            </div>
+    
+            <div class="filter-container">
+                <section class="filters">
+                    <div class="search-container">
+                        <input type="text" id="event-search" placeholder="Search events by name or genre..." aria-label="Search events">
+                    </div>
+                    <h2>Explore by Genre</h2>
+                    <div>
+                        <button class="filter-btn active" data-genre="all">All Events</button>
+                        <button class="filter-btn" data-genre="music">Music</button>
+                        <button class="filter-btn" data-genre="sports">Sports</button>
+                        <button class="filter-btn" data-genre="tech">Tech</button>
+                    </div>
+                </section>
+            </div>
+    
+            <div class="event-grid"></div>
+        </main>
+    
+        <footer>
+            <p>© 2025 EventSphere Inc. All Rights Reserved.</p>
+            <p>
+                <a href="#">About Us</a> | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms & Conditions</a> | 
+                <a href="#">Contact Us</a>
+            </p>
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
